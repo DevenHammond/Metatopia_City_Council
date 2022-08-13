@@ -17,11 +17,11 @@ contract MetaTopiaCityCouncil is ERC721A, Ownable, ReentrancyGuard {
     string public hiddenMetadataUri;
 
     uint256 public cost;
-    bool public discountEnabled = true;
+    bool public discountEnabled = false;
 
-    uint256 public constant maxSupply = 10000;
+    uint256 public constant maxSupply = 100;
     uint256 public maxMintAmountPerTx = 10;
-    uint256 public maxTokenIdPerPhase = 0;
+    uint256 public maxTokenIdPerPhase = 6;
 
     bool public publicMintEnabled;
     bool public whitelistMintEnabled;
